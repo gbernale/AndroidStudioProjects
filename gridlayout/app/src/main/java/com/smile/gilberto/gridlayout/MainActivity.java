@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickLogin (View view) {
         TextView name = (TextView) findViewById(R.id.input1);
         String user = name.getText().toString();
-        Toast.makeText(this, user+"Gilberto is logged in ",
+        Toast.makeText(this, user+"Bernal is logged in ",
                 Toast.LENGTH_LONG).show();
     }
 
