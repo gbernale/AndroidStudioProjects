@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity implements FragmentListado.C
         boolean hayDetalle =
                 (getSupportFragmentManager().findFragmentById(R.id.FrgDetalle) != null);
 
-        if(hayDetalle) {
-            ((FragmentDetalle)getSupportFragmentManager()
-                    .findFragmentById(R.id.FrgDetalle)).mostrarDetalle(c.getTexto());
+        if(!hayDetalle) {
+           // ((FragmentDetalle)getSupportFragmentManager()
+           //         .findFragmentById(R.id.FrgDetalle)).mostrarDetalle(c.getTexto());
         }
         else {
             Intent i = new Intent(this, FragmentDetalle.class);
