@@ -39,7 +39,8 @@ public class MainActivity extends Activity {
         });
 
         // Database query can be a time consuming task ..
-        // so its safe to call database query in another thread
+        // so its safe to call database query
+        // in another thread
         // Handler, will handle this stuff for you <img src="http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1129645325g" alt=":)" class="wp-smiley">
 
         new Handler().post(new Runnable() {

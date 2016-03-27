@@ -13,6 +13,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
      ArrayList<Fragment> myfragment = new ArrayList<>();
      ArrayList<String> tabTitles = new ArrayList<>();
+     //tabTitles.add("Docs");
 
     public ViewPagerAdapter(FragmentManager fm)
     { super(fm);}
@@ -34,8 +35,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         return myfragment.size();
     }
 
-    public CharSequence getPageTile(int  position)
-    {
-       return tabTitles.get(position);
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return tabTitles.get(position);
     }
 }
