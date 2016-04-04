@@ -4,10 +4,18 @@
               android:layout_height="180dp"
               android:background="#f75151">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Fragment"
+        android:id="@+id/btnBack"
+        android:layout_gravity="center_horizontal" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Welcome to Fragment One"
-        android:id="@+id/textView"/>
+        android:id="@+id/textView"
+        android:layout_gravity="bottom|center_horizontal" />
 </LinearLayout>
