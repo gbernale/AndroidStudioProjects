@@ -6,11 +6,23 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ID Docs"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your data"
+        />
+
+    <EditText
+        android:id="@+id/textbox"
+        android:singleLine="false"
+        android:gravity="top"
+        android:lines="10"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save the List"/>
 
 </FrameLayout>

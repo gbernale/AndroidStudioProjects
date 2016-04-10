@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         tabl = (TabLayout)findViewById(R.id.tabLayout);
         viewp = (ViewPager)findViewById(R.id.viewPager);
         viewpa = new ViewPagerAdapter(getSupportFragmentManager());
-        viewpa.addFragments(new HomeFragment(),"PLACES");
-        viewpa.addFragments(new DocsFragment(),"ID DOCS");
-        viewpa.addFragments(new PersonalFragment(),"OTHERS");
+        viewpa.addFragments(new HomeFragment(),"ID & Documents");
+        viewpa.addFragments(new DocsFragment(),"Personal Stuff");
+        viewpa.addFragments(new PersonalFragment(),"Places to Visit");
         viewp.setAdapter(viewpa);
         tabl.setupWithViewPager(viewp);
 

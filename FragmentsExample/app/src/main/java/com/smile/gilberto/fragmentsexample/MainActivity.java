@@ -36,13 +36,8 @@ public class MainActivity extends ActionBarActivity implements ToolbarFragment.T
     @Override
     public void onButtonClick(int fontsize , String textview) {
 
-        /*TextFragment textFrag =
-                (TextFragment)getSupportFragmentManager().findFragmentById(R.id.textFragment); */
-        textFragment.changeTextProperties(fontsize, textview);
+         textFragment.changeTextProperties(fontsize, textview);
 
-
-
-
-        }
+       }
 
 }
