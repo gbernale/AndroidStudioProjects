@@ -1,5 +1,7 @@
 package com.smile.gilberto.tabdemo;
 
+/*  Developed by  Gilberto Bernal
+*   Date :  April 2016   */
 
 import android.app.Activity;
 import android.content.Context;
@@ -66,8 +68,7 @@ public class HomeFragment extends Fragment {
             OutputStreamWriter out = new OutputStreamWriter(fileOutputStream);
             out.write(txtEditor.getText().toString());
             out.close();
-            Toast.makeText(getActivity(), "Your data has been saved in the file: " +
-            getActivity().getFilesDir().getAbsolutePath(), Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Your data has been saved  ", Toast.LENGTH_LONG).show();
         }
 
         catch (Throwable t) {

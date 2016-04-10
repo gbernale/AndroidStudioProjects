@@ -1,5 +1,7 @@
 package com.smile.gilberto.tabdemo;
 
+/*  Developed by  Gilberto Bernal
+*   Date :  April 2016   */
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
