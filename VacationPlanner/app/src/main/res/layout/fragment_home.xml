@@ -17,7 +17,7 @@
         android:id="@+id/textbox"
         android:singleLine="false"
         android:gravity="top"
-        android:lines="10"
+        android:lines="16"
         android:layout_marginTop="100dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
