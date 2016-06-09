@@ -22,7 +22,8 @@ import java.io.OutputStreamWriter;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PersonalFragment extends Fragment {
+public class
+PersonalFragment extends Fragment {
 
     private final static String STORETEXT="vacationlist2.txt";
     private static EditText txtEditor;

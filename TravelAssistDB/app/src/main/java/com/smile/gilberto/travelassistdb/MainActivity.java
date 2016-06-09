@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -47,7 +48,11 @@ public class MainActivity extends ListActivity implements android.view.View.OnCl
                         startActivity(objIndent);
                     }
                 });
-                ListAdapter adapter = new SimpleAdapter( MainActivity.this,travelitemList, R.layout.view_travelitem_entry, new String[] { "item_id","item_name", "item_status"}, new int[] {R.id.item_Id, R.id.item_name, R.id.item_status});
+                ListAdapter adapter = new SimpleAdapter(MainActivity.this,
+                        travelitemList,
+                        R.layout.view_travelitem_entry,
+                        new String[]{"item_id", "item_name", "item_status"},
+                        new int[]{R.id.item_Id, R.id.item_name, R.id.item_status});
                 setListAdapter(adapter);
             }else{
                 Toast.makeText(this,"No travel Item !!", Toast.LENGTH_SHORT).show();
