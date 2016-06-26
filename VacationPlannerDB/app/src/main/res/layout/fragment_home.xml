@@ -1,9 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:orientation="vertical"
-             android:layout_width="fill_parent"
-             android:layout_height="fill_parent"
-             tools:context="com.smile.gilberto.tabdemo.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.smile.gilberto.tabdemo.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -26,7 +26,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Save the List"/>
-        <!--android:onClick="saveVacationData"/> -->
+    <!--android:onClick="saveVacationData"/> -->
 
 
 

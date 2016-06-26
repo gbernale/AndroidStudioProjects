@@ -6,14 +6,17 @@ package com.smile.gilberto.tabdemo;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -29,6 +32,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.nio.Buffer;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class HomeFragment extends Fragment {
@@ -60,7 +65,7 @@ public class HomeFragment extends Fragment {
             }
         });
         return view;
-   }
+    }
 
     public void saveVacationData(View v) {
 
@@ -106,3 +111,4 @@ public class HomeFragment extends Fragment {
     }
 
 }
+

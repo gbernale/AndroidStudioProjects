@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="Travel_List">
+        <item>Passport</item>
+        <item>Credit Card.</item>
+        <item>Driver License</item>
+        <item>Health card.</item>
+        <item>Medecines</item>
+        <item>Fly Ticket.</item>
+        <item>Guidebooks, Maps</item>
+        <item>Car Keys</item>
+        <item>Emergency numbers</item>
+
+    </string-array>
+</resources>
+

@@ -1,6 +1,7 @@
 package com.smile.gilberto.tabdemo;
 
 
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -84,9 +85,9 @@ public class DocsFragment extends Fragment {
                         ListAdapter adapter = new SimpleAdapter(getActivity(),
                                 travelitemList,
                                 R.layout.view_travelitem_entry,
-                                new String[]{"item_id", "item_name", "item_status"},
+                                new String[]{"item_Id", "item_name", "item_status"},
                                 new int[]{R.id.item_Id, R.id.item_name, R.id.item_status});
-                        lv.setAdapter(adapter);
+                                lv.setAdapter(adapter);
 
 
                     } else {
@@ -102,4 +103,6 @@ public class DocsFragment extends Fragment {
        // @Override
 
     }
-    }
+
+
+}
