@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import com.smile.gilberto.tabdemo.R;
 
+import java.util.Calendar;
+
 
 /**
  * Created by Registered User on 5/29/16.
@@ -22,6 +24,7 @@ public class TravelItemDetail  extends ActionBarActivity {
     EditText editTextStatus;
     EditText editTextDate;
     EditText editTextComments;
+    public static final long MAGIC=86400000L;
 
     private int _Travel_Items_Id=0;
 
@@ -46,8 +49,14 @@ public class TravelItemDetail  extends ActionBarActivity {
         Travel_Items travel_item = new Travel_Items();
         travel_item = repo.getTravelistById(_Travel_Items_Id);
 
+        Calendar c = Calendar.getInstance();
+        final String sDate = c.get(Calendar.YEAR) + "-"
+                + c.get(Calendar.MONTH)
+                + "-" + c.get(Calendar.DAY_OF_MONTH);
+
         editTextStatus.setText(String.valueOf(travel_item.item_status));
-        editTextDate.setText(String.valueOf(travel_item.item_date));
+        //editTextDate.setText(String.valueOf(travel_item.item_date));
+        editTextDate.setText(sDate);
         editTextName.setText(travel_item.item_name);
         editTextComments.setText(travel_item.item_comments);
         //btnDelete.setOnClickListener(getApplication() );
@@ -55,14 +64,15 @@ public class TravelItemDetail  extends ActionBarActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                      String  ssDate =sDate.replace("-", "");
                       if (view == findViewById(R.id.btnSave)){
                         //StudentRepo repo = new StudentRepo(this);
                         TravelRepo repo = new TravelRepo(getApplication());
                         //Student student = new Student();
                         Travel_Items travel_item = new Travel_Items();
-                        travel_item.item_date= Integer.parseInt(editTextDate.getText().toString());
-                        travel_item.item_comments=editTextComments.getText().toString();
+                        //travel_item.item_date= Integer.parseInt(editTextDate.getText().toString());
+                        travel_item.item_date=new Integer(Integer.parseInt(ssDate));
+                          travel_item.item_comments=editTextComments.getText().toString();
                         travel_item.item_status=Integer.parseInt(editTextStatus.getText().toString());
                         travel_item.item_name=editTextName.getText().toString();
                         travel_item.item_ID=_Travel_Items_Id;

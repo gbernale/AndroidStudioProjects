@@ -69,25 +69,27 @@ public class DocsFragment extends Fragment {
                     ArrayList<HashMap<String, String>> travelitemList = repo.getTravelItemList();
                     if (travelitemList.size() != 0) {
 
-                        ListView lv = (ListView)view.findViewById(R.id.list);
+                        ListView lv = (ListView) view.findViewById(R.id.list);
 
-                        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                travelItem_Id = (TextView) view.findViewById(R.id.item_Id);
-                                String itemId = travelItem_Id.getText().toString();
-                                Intent objIndent = new Intent(getActivity(), TravelItemDetail.class);
-                                objIndent.putExtra("item_Id", Integer.parseInt(itemId));
-                                startActivity(objIndent);
-                        }
-                        });
+                      // lv.setOnItemclick was here before
 
                         ListAdapter adapter = new SimpleAdapter(getActivity(),
                                 travelitemList,
                                 R.layout.view_travelitem_entry,
-                                new String[]{"item_Id", "item_name", "item_status"},
-                                new int[]{R.id.item_Id, R.id.item_name, R.id.item_status});
+                                new String[]{"item_id", "item_name", "item_Status"},
+                                new int[]{R.id.item_id, R.id.item_name, R.id.item_status});
                                 lv.setAdapter(adapter);
+
+                        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                travelItem_Id = (TextView) view.findViewById(R.id.item_id);
+                                String itemId = travelItem_Id.getText().toString();
+                                Intent objIndent = new Intent(getActivity(), TravelItemDetail.class);
+                                objIndent.putExtra("item_Id", Integer.parseInt(itemId));
+                                startActivity(objIndent);
+                            }
+                        });
 
 
                     } else {

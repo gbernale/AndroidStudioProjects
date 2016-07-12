@@ -3,7 +3,9 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.smile.gilberto.tabdemo.HomeFragment">
+    tools:context="com.smile.gilberto.tabdemo.HomeFragment"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff">
 
     <!-- TODO: Update blank fragment layout -->
 

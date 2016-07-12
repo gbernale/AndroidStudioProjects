@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
         viewp = (ViewPager)findViewById(R.id.viewPager);
         viewpa = new ViewPagerAdapter(getSupportFragmentManager());
         viewpa.addFragments(new HomeFragment(),"Personal Stuff");
-        viewpa.addFragments(new DocsFragment(),"Budget");
         viewpa.addFragments(new PersonalFragment(),"Documents Checklist");
+        viewpa.addFragments(new DocsFragment(),"Budget");
+       // viewpa.addFragments(new PersonalFragment(),"Documents Checklist");
         viewp.setAdapter(viewpa);
         tabl.setupWithViewPager(viewp);
 

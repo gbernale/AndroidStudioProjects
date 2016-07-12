@@ -6,13 +6,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.instinctcoder.TravelAssistDB.TravelItemDetail$PlaceholderFragment">
+    tools:context="com.instinctcoder.TravelAssistDB.TravelItemDetail$PlaceholderFragment"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff">
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textAppearance="?android:attr/textAppearanceMedium"
-    android:text="itemName"
+    android:text="Description"
     android:id="@+id/textView"
     android:layout_alignParentTop="true"
     android:layout_alignParentLeft="true"
@@ -23,7 +25,7 @@
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:textAppearance="?android:attr/textAppearanceMedium"
-android:text="itemStatus"
+android:text="Amount"
 android:id="@+id/textView2"
 android:layout_below="@+id/textView"
 android:layout_alignParentLeft="true"
@@ -34,7 +36,7 @@ android:layout_marginTop="29dp" />
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:textAppearance="?android:attr/textAppearanceMedium"
-android:text="itemDate"
+android:text="Date"
 android:id="@+id/textView3"
 android:layout_below="@+id/textView2"
 android:layout_alignParentLeft="true"
@@ -45,7 +47,7 @@ android:layout_marginTop="29dp" />
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:textAppearance="?android:attr/textAppearanceMedium"
-android:text="itemComments"
+android:text="Description"
 android:id="@+id/textView4"
 android:layout_below="@+id/textView3"
 android:layout_alignParentLeft="true"
@@ -107,7 +109,8 @@ android:ems="10"
 android:id="@+id/editTextitemStatus"
 android:layout_alignBottom="@+id/textView2"
 android:layout_alignLeft="@+id/editTextitemDate"
-android:layout_alignStart="@+id/editTextitemDate" />
+android:layout_alignStart="@+id/editTextitemDate"
+android:hint="0" />
 
 <EditText
 android:layout_width="wrap_content"
@@ -118,4 +121,5 @@ android:layout_alignRight="@+id/editTextitemDate"
 android:layout_alignEnd="@+id/editTextitemDate"
 android:layout_toEndOf="@+id/textView4"
 android:layout_toRightOf="@+id/textView4" />
-    </RelativeLayout>
+
+</RelativeLayout>
