@@ -57,6 +57,7 @@ public class DocsFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), TravelItemDetail.class);
                 intent.putExtra("travelItem_Id", 0);
                 getActivity().startActivity(intent);
+
             }
         });
 
