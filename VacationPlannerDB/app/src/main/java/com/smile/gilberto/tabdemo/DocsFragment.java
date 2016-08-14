@@ -42,6 +42,8 @@ public class DocsFragment extends Fragment {
     Button btnAdd,btnGetAll;
     TextView travelItem_Id;
     ListView lv;
+    int total;
+    TextView et ;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -80,6 +82,21 @@ public class DocsFragment extends Fragment {
                                 new String[]{"item_id", "item_name", "item_Status"},
                                 new int[]{R.id.item_id, R.id.item_name, R.id.item_status});
                                 lv.setAdapter(adapter);
+
+                               //calculate total expenses
+                                int value;
+                                total =0;
+                                for (int i = 0; i < lv.getCount(); i++) {
+                                  View vv = lv.getAdapter().getView(i, null, null);
+                                  et = (TextView) vv.findViewById(R.id.item_status);
+                                  if (et!=null) {
+                                    value = Integer.valueOf(et.getText().toString());
+                                    total =total +value;
+
+                                    }
+                                }
+                        Toast.makeText(getActivity(),"TOTAL  =  " + total,Toast.LENGTH_LONG).show();
+
 
                         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override

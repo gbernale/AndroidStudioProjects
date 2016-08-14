@@ -92,20 +92,29 @@ public class TravelItemDetail  extends ActionBarActivity {
                             Toast.makeText(getApplication(),"Travel Item Record updated",Toast.LENGTH_SHORT).show();
                             finish();
                         }
-                    }else if (view== findViewById(R.id.btnDelete)){
+                    }/*else if (view== findViewById(R.id.btnDelete)){
                         TravelRepo repo = new TravelRepo(getApplication());
                         repo.delete(_Travel_Items_Id);
                         Toast.makeText(getApplication(), "Travel Item Record Deleted", Toast.LENGTH_SHORT);
                         finish();
                     }else if (view== findViewById(R.id.btnClose)){
                         finish();
-                    }
+                    }*/
 
 
 
             }
         });
-        //btnDelete.setOnClickListener(this);
+        btnDelete.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+               TravelRepo repo = new TravelRepo(getApplication());
+               repo.delete(_Travel_Items_Id);
+               Toast.makeText(getApplication(), "Travel Item Record Deleted", Toast.LENGTH_SHORT);
+               finish();}});
+
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

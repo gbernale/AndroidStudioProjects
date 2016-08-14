@@ -3,11 +3,11 @@
     <string-array
         name="Travel_List">
         <item>Passport</item>
-        <item>Credit Card.</item>
+        <item>Credit Card</item>
         <item>Driver License</item>
-        <item>Health card.</item>
-        <item>Medecines</item>
-        <item>Fly Ticket.</item>
+        <item>Health card</item>
+        <item>Medicine</item>
+        <item>Flight Ticket</item>
         <item>Guidebooks, Maps</item>
         <item>Car Keys</item>
         <item>Emergency numbers</item>
