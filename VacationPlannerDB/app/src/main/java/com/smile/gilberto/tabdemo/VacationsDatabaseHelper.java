@@ -7,9 +7,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/**
- * Created by Registered User on 3/27/16.
+/*
+ * Created by Gilberto Bernal
+ * Registered User on 8/12/16.
  */
+
 public class VacationsDatabaseHelper {
 
     private static final String TAG = VacationsDatabaseHelper.class.getSimpleName();

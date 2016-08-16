@@ -1,6 +1,6 @@
 package com.smile.gilberto.tabdemo;
 /*  Developed by  Gilberto Bernal
-*   Date :  April 2016   */
+*   Date :  August 2016   */
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

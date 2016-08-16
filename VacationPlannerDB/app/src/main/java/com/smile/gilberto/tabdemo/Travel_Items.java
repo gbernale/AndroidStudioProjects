@@ -1,7 +1,8 @@
 package com.smile.gilberto.tabdemo;
 
-/**
- * Created by Registered User on 5/29/16.
+/*
+ * Created by Gilberto Bernal
+ * Registered User on 8/12/16.
  */
 public class Travel_Items {
     // Labels table name

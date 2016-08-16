@@ -28,10 +28,11 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
-/**
- * A simple {@link Fragment} subclass.
+ /*
+ * Created by Gilberto Bernal
+ * Registered User on 8/12/16.
  */
+
 public class DocsFragment extends Fragment {
 
   private View view;
