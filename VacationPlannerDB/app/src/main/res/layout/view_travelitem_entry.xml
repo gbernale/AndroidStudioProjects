@@ -31,6 +31,6 @@
         android:layout_marginLeft="00dp"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="250dp"
          />
 </RelativeLayout>

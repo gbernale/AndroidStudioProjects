@@ -11,14 +11,17 @@
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:layout_marginTop="105dp"
-        android:text="Save Travel List"/>
+        android:text="Save Documents check-List"
+
+        />
 
     <Button
         android:id="@+id/clearall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:text="Clear All" />
+        android:text="Clear All"
+        android:visibility="gone"/>
 
     <ListView
         android:id="@+id/list"
