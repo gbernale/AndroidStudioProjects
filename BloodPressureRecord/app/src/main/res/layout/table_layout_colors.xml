@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
@@ -50,8 +51,6 @@
                 android:textColor="#ffffff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-
-
         </TableRow>
 
         <TableRow
@@ -138,10 +137,6 @@
                 android:text="     80 - 89   "
                 android:textColor="#ffffff"
                 android:textSize="18sp" />
-
-
-
-            <!-- </LinearLayout> -->
         </TableRow>
 
         <TableRow
@@ -272,6 +267,20 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
             <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cellborder"
+                android:paddingBottom="6dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="6dp"
+                android:text="Date - DMY"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -281,7 +290,7 @@
                 android:paddingLeft="1dp"
                 android:paddingRight="1dp"
                 android:paddingTop="6dp"
-                android:text="Notes"
+                android:text="Comments"
                 android:textColor="#ffffff"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -293,7 +302,7 @@
             android:backgroundTint="#cfdffc">
 
             <EditText
-                android:id="@+id/systolic"
+                android:id="@+id/et_systolic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -307,7 +316,7 @@
                 android:width="4px"
                 android:textStyle="bold" />
             <EditText
-                android:id="@+id/diastolic"
+                android:id="@+id/et_diastolic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -321,7 +330,7 @@
                 android:width="4px"
                 android:textStyle="bold" />
             <EditText
-                android:id="@+id/pulse"
+                android:id="@+id/et_pulse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -331,10 +340,24 @@
                 android:paddingTop="6dp"
                 android:textColor="#ffffff"
                 android:textSize="14sp"
-                android:width="6px"
+                android:width="4px"
                 android:textStyle="bold" />
             <EditText
-                android:id="@+id/notes"
+                android:id="@+id/et_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cellborder"
+                android:paddingBottom="6dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="6dp"
+                android:width="10px"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_comments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -349,6 +372,7 @@
                 android:textStyle="bold" />
         </TableRow>
     </TableLayout>
+
     <Button android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add"
