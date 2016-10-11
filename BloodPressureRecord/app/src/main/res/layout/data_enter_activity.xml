@@ -23,7 +23,7 @@
                 android:paddingTop="6dp"
                 android:text="Category"
                 android:textColor="#ffffff"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
             <TextView
                 android:id="@+id/textView2"
@@ -36,7 +36,7 @@
                 android:paddingTop="6dp"
                 android:text="   Systolic    "
                 android:textColor="#ffffff"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
             <TextView
                 android:id="@+id/textView3"
@@ -49,7 +49,7 @@
                 android:paddingTop="6dp"
                 android:text="     Diastolic"
                 android:textColor="#ffffff"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -69,7 +69,7 @@
                 android:paddingTop="6dp"
                 android:text="Low Risk  "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_propertylistitem_propertyid"
                 android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
                 android:paddingTop="6dp"
                 android:text="    120        "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_propertylistitem_propertyid3"
                 android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
                 android:paddingTop="6dp"
                 android:text="       80   "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
         </TableRow>
 
         <TableRow
@@ -112,7 +112,7 @@
                 android:paddingTop="6dp"
                 android:text=" Medium Risk  "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_propertylistitem_propertyid1"
                 android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
                 android:paddingTop="6dp"
                 android:text="    121 - 39      "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_propertylistitem_propertyid2"
                 android:layout_width="wrap_content"
@@ -136,7 +136,7 @@
                 android:paddingTop="6dp"
                 android:text="     80 - 89   "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
         </TableRow>
 
         <TableRow
@@ -155,7 +155,7 @@
                 android:paddingTop="6dp"
                 android:text=" High Risk  "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_propertylistitem_propertyid9"
                 android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
                 android:paddingTop="6dp"
                 android:text="    140 +      "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_propertylistitem_propertyid92"
                 android:layout_width="wrap_content"
@@ -179,7 +179,7 @@
                 android:paddingTop="6dp"
                 android:text="     90 +   "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
         </TableRow>
 
         <TableRow
@@ -198,7 +198,7 @@
                 android:paddingTop="6dp"
                 android:text="   "
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                 android:gravity="center"
                 android:text="Type your data below"
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
         </TableRow>
 
         <TableRow
@@ -276,9 +276,9 @@
                 android:paddingLeft="1dp"
                 android:paddingRight="1dp"
                 android:paddingTop="6dp"
-                android:text="Date - DMY"
+                android:text="Date-DMY"
                 android:textColor="#ffffff"
-                android:textSize="14sp"
+                android:textSize="10sp"
                 android:textStyle="bold" />
             <TextView
                 android:id="@+id/textView14"
@@ -292,7 +292,7 @@
                 android:paddingTop="6dp"
                 android:text="Comments"
                 android:textColor="#ffffff"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </TableRow>
         <TableRow
