@@ -25,10 +25,6 @@ public class DataEnterActivity extends Activity {
         editTextPulse = (EditText) findViewById(R.id.et_pulse);
         editTextDate = (EditText) findViewById(R.id.et_date);
         editTextComments = (EditText) findViewById(R.id.et_comments);
-
-
-
-
     }
     public void onClickAdd (View btnAdd) {
         String ssystolic = editTextSystolic.getText().toString();

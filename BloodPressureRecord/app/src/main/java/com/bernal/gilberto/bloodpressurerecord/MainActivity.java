@@ -48,6 +48,11 @@ public class MainActivity extends Activity {
     public void onClickEnterData(View btnAdd) {
         startActivityForResult(new Intent(this, DataEnterActivity.class), ENTER_DATA_REQUEST_CODE);
     }
+
+    public void onClickViewGraph(View btnGraph) {
+        startActivityForResult(new Intent(this, GraphActivity.class), ENTER_DATA_REQUEST_CODE);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

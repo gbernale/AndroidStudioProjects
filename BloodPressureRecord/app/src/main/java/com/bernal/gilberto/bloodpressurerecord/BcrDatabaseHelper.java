@@ -49,6 +49,12 @@ public class BcrDatabaseHelper {
         Log.d(TAG, "getAllData SQL: " + buildSQL);
         return database.rawQuery(buildSQL, null);
     }
+
+    public Cursor getDataforGraph () {
+        String buildSQL = "SELECT "+BCR_TABLE_COLUMN_SYST+BCR_TABLE_COLUMN_DIAST+" FROM " + TABLE_NAME+"ORDER BY "+BCR_TABLE_COLUMN_DDATE;
+        Log.d(TAG, "getDataforGraph SQL: " + buildSQL);
+        return database.rawQuery(buildSQL, null);
+    }
     // this DatabaseOpenHelper class will actually be used to perform database related operation
     private class DatabaseOpenHelper extends SQLiteOpenHelper {
         public DatabaseOpenHelper(Context aContext) {
